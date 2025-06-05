@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Aos -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="fw-bold" data-aos="fade-down" data-aos-duration="1000"><i class="fas fa-headset fa-bounce"></i>
+                Contact Us
+            </h1>
+            <p class="fs-5">The Interior speak for themselves</p>
+        </div>
+        <div class="breadcrumb-custom" data-aos="fade-left" data-aos-duration="1000">
+            <a href="#">Home</a> - <span>Contact Us</span>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="contact-pitch">
+        <div class="pitch-container">
+            <h2 class="text-center" data-aos="fade-left" data-aos-duration="1000"> <i class="fas fa-handshake"></i>
+                Let's Build Something Amazing Together</h2>
+            <p class="intro-text text-center" data-aos="fade-right" data-aos-duration="1000">
+                At <strong>Arya Infotech</strong>, we don’t just offer services — we build relationships.
+                Whether you have a small query, need a price estimate, or are ready to start your project, we’d love to
+                talk to you.
+            </p>
+
+            <div class="services-grid">
+                <div class="service-col">
+                    <h4 class="text-primary"> <i class="fas fa-code"></i> Development</h4>
+                    <ul>
+                        <li><i class="fas fa-globe"></i> Website Design & Development</li>
+                        <li><i class="fab fa-react"></i> React JS</li>
+                        <li><i class="fab fa-laravel"></i> Laravel</li>
+                    </ul>
+                </div>
+                <div class="service-col">
+                    <h4 class="text-primary"> <i class="fas fa-shopping-cart"></i> E-Commerce</h4>
+                    <ul>
+                        <li> <i class="fas fa-globe"></i> WooCommerce / WordPress</li>
+                        <li><i class="fab fa-shopify"></i> Shopify</li>
+                        <li><i class="fab fa-wix"></i> Wix</li>
+                        <li><i class="fab fa-joomla"></i> Joomla</li>
+                    </ul>
+                </div>
+                <div class="service-col">
+                    <h4 class="text-primary"> <i class="fas fa-bullhorn"></i> Creative & Marketing</h4>
+                    <ul>
+                        <li><i class="fas fa-paint-brush"></i> Logo & Graphic Design</li>
+                        <li><i class="fas fa-search"></i> SEO & Digital Marketing</li>
+                        <li><i class="fas fa-file-alt"></i> CMS Solutions</li>
+                        <li><i class="fas fa-tools"></i> Maintenance</li>
+                        <li><i class="fas fa-comments"></i> Custom Consultation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Form -->
+                <div class="col-lg-6 mb-4">
+                    <h3><i class="fas fa-comments me-2"></i>Let’s Start a Conversation</h3>
+                    <p>We're here to help with any of your digital needs—from web design and SEO to Shopify and ReactJS.
+                    </p>
+                    <form class="p-4" style="border: 2px double #0d6efd;">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Full Name" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Phone" />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email" />
+                            </div>
+                            <div class="col-lg-6 mb-3">
+                                <select class="form-control">
+                                    <option>Subject / Service Type</option>
+                                    <option>Website Design</option>
+                                    <option>SEO & Digital Marketing</option>
+                                    <option>eCommerce Development</option>
+                                    <option>Graphic Design</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="form-control" rows="3" placeholder="How we can help you.."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-glow">Submit</button>
+                    </form>
+
+                    <!-- Contact Info -->
+                    <div class="row mt-5 info-box">
+                        <div class="col-md-4">
+                            <h6><i class="fas fa-map-marker-alt me-2 fa-bounce"></i> <strong>Location</strong></h6>
+                            <p>Telka, Chamba, <br> Himachal Pradesh 176330</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6><i class="fas fa-phone-alt me-2 fa-bounce"></i> <strong>Call Us</strong></h6>
+                            <a href="tel:+918219700108" class="text-decoration-none text-dark">+91 821 970 0108</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h6><i class="fas fa-envelope me-2 fa-bounce"></i> <strong>Email</strong></h6>
+                            <a href="mailto:aryainfotech00@gmail.com"
+                                class="text-decoration-none text-dark">aryainfotech00@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Embedded Google Map -->
+                <div class="col-lg-6">
+                    <iframe src="https://maps.google.com/maps?q=telka%20chamba&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's build together -->
+    <section id="build-together">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <h3 class="text-center" data-aos="fade-left" data-aos-duration="1000"><i class="fas fa-clipboard-list"></i>
+                What You Can Expect From Us</h3>
+            <p class="text-center" data-aos="fade-right" data-aos-duration="1000">We make your ideas come alive with
+                clean code, creative design, and scalable
+                solutions.</p>
+        </div>
+        <div class="row text-center gy-4 mt-4">
+            <div class="col-md-4 border-end border-5 border-primary" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="icon-container fas fa-clock fa-2x text-white bg-primary mb-2 p-4"></i>
+                <h5>Fast Response</h5>
+                <p>We respond within 24 hours — usually much sooner!</p>
+            </div>
+            <div class="col-md-4 border-end border-5 border-primary" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="icon-container fas fa-comments fa-2x text-white bg-primary mb-2 p-4"></i>
+                <h5>Clear Communication</h5>
+                <p>No jargon — just helpful, friendly conversations.</p>
+            </div>
+            <div class="col-md-4 border-end border-5 border-primary" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="icon-container fas fa-magnifying-glass-dollar fa-2x text-white bg-primary mb-2 p-4"></i>
+                <h5>Free Consultation</h5>
+                <p>Explore ideas without pressure or commitment.</p>
+            </div>
+
+            <div class="col-md-4 border-end border-5 border-primary" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="icon-container fas fa-hand-holding-dollar fa-2x text-white bg-primary mb-2 p-4"></i>
+                <h5>Transparent Pricing</h5>
+                <p>No hidden fees. We explain everything clearly.</p>
+            </div>
+            <div class="col-md-4 border-end border-5 border-primary" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="icon-container fas fa-life-ring fa-2x text-white bg-primary mb-2 p-4"></i>
+                <h5>Ongoing Support</h5>
+                <p>We're here for updates, fixes, and new features — even after launch.</p>
+            </div>
+            <div class="col-md-4 border-end border-5 border-primary" data-aos="zoom-out" data-aos-duration="1000">
+                <i class="icon-container fas fa-clock fa-2x text-white bg-primary mb-2 p-4"></i>
+                <h5>Consistency & Reliability</h5>
+                <p>Showing commitment by meeting deadlines, attending scheduled meetings, and delivering on promises.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pages Links -->
+    <section id="pages-links">
+        <div class="my-3">
+            <h3 class="text-center" data-aos="fade-left" data-aos-duration="1000">🔗 Explore Our Workspaces</h3>
+            <p class="text-center" data-aos="fade-right" data-aos-duration="1000">Discover our services, success
+                stories, and what we can build together.</p>
+        </div>
+        <div class="row text-center justify-content-between pt-3 px-3 bg-primary">
+            <div class="col-md-2 mb-3">
+                <a href="#" class="d-block text-decoration-none">
+                    <i class="fas fa-briefcase fa-2x mb-2"></i><br />Services Page
+                </a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="#" class="d-block text-decoration-none">
+                    <i class="fas fa-image fa-2x mb-2"></i><br />Portfolio
+                </a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="#" class="d-block text-decoration-none">
+                    <i class="fas fa-users fa-2x mb-2"></i><br />Testimonials
+                </a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="#" class="d-block text-decoration-none">
+                    <i class="fas fa-blog fa-2x mb-2"></i><br />Blog
+                </a>
+            </div>
+            <div class="col-md-2 mb-3">
+                <a href="#" class="d-block text-decoration-none">
+                    <i class="fas fa-calculator fa-2x mb-2"></i><br />Get a Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq-section" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="container faq-wrapper">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq1">
+                <label for="faq1" class="faq-question">“I need a new website for my business. What’s the
+                    process?”</label>
+                <div class="faq-answer">
+                    <p>We’ll guide you from idea to launch — discovery, design, development, and delivery.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq2">
+                <label for="faq2" class="faq-question">“Can you fix an existing site made by someone else?”</label>
+                <div class="faq-answer">
+                    <p>Yes! We often jump in to fix or improve existing projects with full transparency.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <input type="checkbox" id="faq3">
+                <label for="faq3" class="faq-question">“I need help integrating payments into my site.”</label>
+                <div class="faq-answer">
+                    <p>Absolutely. We support Stripe, Razorpay, PayPal and more — fully secure integrations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

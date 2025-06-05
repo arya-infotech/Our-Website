@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Split Content & Image Slider</title>
+  <link rel="stylesheet" href="css/services.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet" />
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Hero Slider -->
+  <main>
+    <div class="left-half" id="left-half">
+      <div class="meta" id="slide-meta">Service</div>
+      <h2 id="slide-title">IT Consulting</h2>
+      <div class="meta" id="slide-status">Expert technology advice.</div>
+    </div>
+
+    <div class="right-half" id="right-half">
+      <img id="slide-image" src="./images/services/main-slide.webp" alt="IT Consulting" />
+    </div>
+
+    <div id="pagination">
+      <button class="active" data-slide="0" aria-label="IT Consulting"></button>
+      <button data-slide="1" aria-label="SEO Services"></button>
+      <button data-slide="2" aria-label="UI/UX Design"></button>
+      <button data-slide="3" aria-label="Web Development"></button>
+    </div>
+  </main>
+
+  <!-- What We Offer section -->
+  <section id="offer" class="mt-4 p-5 offer-section">
+    <h2 class="text-center fw-bold" data-aos="zoom-in" data-aos-duration="2000">What We Offer</h2>
+    <p class="text-center" data-aos="fade-right" data-aos-duration="1000">We provide innovative and reliable digital solutions tailored to your business needs.
+      From
+      website design and development to mobile apps, branding, and marketing—we help you grow online with speed,
+      strategy, and creativity.</p>
+    <div class="owl-carousel services-carousel owl-theme">
+      <div class="item">
+        <div class="card image-overlay-card">
+          <div class="overlay"></div>
+          <img src="./images/services/Carousel/web-development.jpg" alt="Web Development" />
+          <div class="card-body">
+            <h6 class="font-weight-bold">🔹Stack Web Development</h6>
+            <div class="d-flex">
+              <i class="fas fa-quote-left text-primary fs-7"></i>
+              <p class="text-content">
+                Your website is your digital storefront—we make it fast, responsive, and SEO-friendly using modern tech
+                like HTML5, CSS3, JavaScript, React, and PHP.
+              </p>
+            </div>
+            <button class="read-more-btn">See More<i class="fas fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card image-overlay-card">
+          <div class="overlay"></div>
+          <img src="./images/services/Carousel/graphic.jpg" alt="Web & Graphic Design" />
+          <div class="card-body">
+            <h6 class="font-weight-bold">🔹 Web & Graphic Design</h6>
+            <div class="d-flex">
+              <i class="fas fa-quote-left text-primary fs-7"></i>
+              <p class="text-content">
+                We bring your brand to life with custom graphic and web design. From logos and brand kits to UI/UX for
+                websites and apps, our designs are creative, on-brand, and built to engage."
+              </p>
+            </div>
+            <button class="read-more-btn">See More<i class="fas fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card image-overlay-card">
+          <div class="overlay"></div>
+          <img src="./images/services/Carousel/app-development.jpg" alt="Mobile Application Development" />
+          <div class="card-body">
+            <h6 class="font-weight-bold">🔹Mobile App Development</h6>
+            <div class="d-flex">
+              <i class="fas fa-quote-left text-primary fs-7"></i>
+              <p class="text-content">
+                We build custom Android and iOS apps using Flutter and React Native—fast, secure, and user-friendly.
+                Perfect for startups, e-commerce, and service-based businesses."
+              </p>
+            </div>
+            <button class="read-more-btn">See More<i class="fas fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card image-overlay-card">
+          <div class="overlay"></div>
+          <img src="./images/services/Carousel/marketing.png" alt="Digital Marketing Services" />
+          <div class="card-body">
+            <h6 class="font-weight-bold">🔹 Digital Marketing Services</h6>
+            <div class="d-flex">
+              <i class="fas fa-quote-left text-primary fs-7"></i>
+              <p class="text-content">Boost traffic, leads, and visibility with our digital marketing services—SEO,
+                Google Ads, Meta Ads, content marketing, and social media management—all focused on ROI and real
+                results."</p>
+            </div>
+            <button class="read-more-btn">See More<i class="fas fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card image-overlay-card">
+          <div class="overlay"></div>
+          <img src="./images/services/Carousel/E-commerce.jpg" alt="E-Commerce Development" />
+          <div class="card-body">
+            <h6 class="font-weight-bold">🔹 E-Commerce Development</h6>
+            <div class="d-flex">
+              <i class="fas fa-quote-left text-primary fs-7"></i>
+              <p class="text-content">We build secure, scalable e-commerce platforms using WooCommerce, Shopify, or
+                custom solutions—designed for smooth shopping and faster growth.
+              </p>
+            </div>
+            <button class="read-more-btn">See More<i class="fas fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card image-overlay-card">
+          <div class="overlay"></div>
+          <img src="./images/services/Carousel/cms.png" alt="CMS Website Development" />
+          <div class="card-body">
+            <h6 class="font-weight-bold">🔹 CMS Website Development</h6>
+            <div class="d-flex">
+              <i class="fas fa-quote-left text-primary fs-7"></i>
+              <p class="text-content">We develop CMS-powered websites with WordPress, Joomla, and more—so you can easily
+                manage content without tech skills. Ideal for blogs, service sites, and info platforms.</p>
+            </div>
+            <button class="read-more-btn">See More<i class="fas fa-arrow-right ms-1"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vertical Slider -->
+  <div class="container py-5">
+    <div class="row">
+      <!-- Left thumbnails -->
+      <div class="col-md-2">
+        <div class="thumb-wrapper flex-md-column flex-row overflow-auto">
+          <img src="./images/services/vertical-slider/design.jpg" class="thumb-img img-fluid active"
+            onclick="showSlide(0)">
+          <img src="./images/services/vertical-slider/graphic.jpg" class="thumb-img img-fluid" onclick="showSlide(1)">
+          <img src="./images/services/vertical-slider/web-development.jpg" class="thumb-img img-fluid"
+            onclick="showSlide(2)">
+          <img src="./images/services/vertical-slider/marketing.jpg" class="thumb-img img-fluid" onclick="showSlide(3)">
+        </div>
+      </div>
+      <!-- Main Image -->
+      <div class="col-md-5">
+        <div class="main-img-wrapper">
+          <img id="mainImage" src="./images/services/vertical-slider/design.jpg" class="main-img">
+        </div>
+      </div>
+      <!-- Text Content -->
+      <div class="col-md-5 d-flex flex-column justify-content-between">
+        <div>
+          <h5 class="text-uppercase fw-bold" data-aos="fade-left" data-aos-duration="1000">Our Specialization</h5>
+          <h4 class="text-primary fw-bold" id="titleText" data-aos="zoom-in" data-aos-duration="1000"></h4>
+          <p id="desc1"></p>
+          <p id="desc2"></p>
+        </div>
+        <div class="d-flex d-md-flex gap-2">
+          <button class="pushable text-white" onclick="prevSlide()"><span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front p-2 px-3 fw-bold"> PREV</span>
+          </button>
+          <button class="pushable text-white" onclick="nextSlide()"><span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front p-2 px-3 fw-bold"> NEXT</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Let's talk  -->
+  <section class="py-5 gradient-section">
+    <!-- Gear icon -->
+    <div class="position-absolute end-0 opacity-10" style="top: -4rem; z-index: 0;">
+      <i class="fas fa-cogs fa-10x text-primary"></i>
+    </div>
+
+    <!-- Bubble Background -->
+    <div class="bubble-wrap">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 image-container bg-transparent" data-aos="fade-right">
+          <img src="./images/services/Let's talk.png" alt="Teamwork" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h2 class="fw-bold text-primary mb-3">
+            <i class="fas fa-lightbulb me-2"></i>Let’s Build Something Great Together
+          </h2>
+          <p class="text-dark fs-5 mb-4">
+            Whether you're looking to launch a new brand, upgrade your digital presence, or scale your business with
+            cutting-edge technology—
+            <strong>AryaInfotech</strong> is here to help.
+          </p>
+          <p class="text-dark fs-5 mb-4">
+            Let’s bring your vision to life with expert strategy, design, and execution.
+          </p>
+          <a href="#contact" class="btn btn-primary px-4 py-2 rounded-pill">
+            <i class="fas fa-paper-plane me-2"></i>Let's Talk
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Marquee -->
+  <section class="services-marquee">
+    <div class="container">
+      <div class="marquee-track">
+        <div class="marquee-wrapper">
+          <img src="./images/services/marquee/development.jpg" alt="Service 1">
+          <img src="./images/services/marquee/graphic.jpg" alt="Service 2">
+          <img src="./images/services/marquee/designer.jpg" alt="Service 3">
+          <img src="./images/services/marquee/app.jpg" alt="Service 4">
+          <img src="./images/services/marquee/marketing.jpg" alt="Service 5">
+          <img src="./images/services/marquee/e-commerce.jpg" alt="Service 6">
+          <img src="./images/services/marquee/cms.png" alt="Service 7">
+          <!-- Add more as needed -->
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-wrapper">
+          <img src="./images/services/marquee/development.jpg" alt="Service 1">
+          <img src="./images/services/marquee/graphic.jpg" alt="Service 2">
+          <img src="./images/services/marquee/designer.jpg" alt="Service 3">
+          <img src="./images/services/marquee/app.jpg" alt="Service 4">
+          <img src="./images/services/marquee/marketing.jpg" alt="Service 5">
+          <img src="./images/services/marquee/e-commerce.jpg" alt="Service 6">
+          <img src="./images/services/marquee/cms.png" alt="Service 7">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

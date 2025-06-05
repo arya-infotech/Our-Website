@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Aos -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="fw-bold" data-aos="fade-down" data-aos-duration="1000"><i
+                    class="fas fa-circle-info fa-bounce"></i> About Us
+            </h1>
+            <p class="fs-5">We don’t just design — we bring ideas to life.</p>
+        </div>
+        <div class="breadcrumb-custom" data-aos="fade-left" data-aos-duration="1000">
+            <a href="#">Home</a> - <span>About Us</span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="position-relative overflow-hidden py-5 bg-light"
+        style="background: linear-gradient(to bottom right, #e0eaff, #ffffff);letter-spacing: 1px;">
+        <!-- Bubble Background -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 0;">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-100 h-100">
+                <circle cx="20" cy="20" r="5" fill="#d0e1ff" opacity="0.4">
+                    <animate attributeName="cy" values="20;80;20" dur="6s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="70" cy="50" r="8" fill="#a7c7ff" opacity="0.3">
+                    <animate attributeName="cy" values="50;20;50" dur="8s" repeatCount="indefinite" />
+                </circle>
+                <!-- Add more circles for depth -->
+            </svg>
+        </div>
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="p-4 rounded-4 shadow-lg bg-white bg-opacity-75"
+                        style="backdrop-filter: blur(8px); border-left: 5px solid #3758f9;">
+                        <h2 class="text-primary fw-bold mb-3"><i class="fas fa-circle-info"></i> About Arya Infotech
+                        </h2>
+                        <p class="text-dark">
+                            At <strong>Arya Infotech</strong>, we’re more than just a technology service provider—we’re
+                            a team of passionate designers, developers, and strategists dedicated to helping businesses
+                            thrive in the digital world.
+                        </p>
+                        <p class="text-dark text-white p-3 rounded-3 bg-primary">
+                            Founded with a vision to bridge the gap
+                            between business goals and digital execution, Arya
+                            Infotech has grown into a trusted name for customized web solutions, e-commerce platforms,
+                            branding, SEO, and more.
+                        </p>
+                        <p class="text-dark mb-0">
+                            Whether you're a startup building your first website or an established company looking to
+                            scale online, we are here to make your digital journey smooth, impactful, and result-driven.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="./images/about/aboutUs.jpg" alt="Creative Team" class="img-fluid"
+                        style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Misson -->
+    <section class="mission-section" style="letter-spacing: 1px;">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- Image Part -->
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="mission-img-container">
+                        <div class="blue-box-top"></div>
+                        <img src="./images/about/ourMisson.jpg" alt="Polly Walter" class="mission-img">
+                        <div class="name-bar text-white fw-bold" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                            Arya Infotech <br>
+                            <small>Telka Chamba, 176330</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Part -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <span class="quote-icon">“</span>
+                    <h3 class="mb-3 fw-bold"><i class="fas fa-bullseye text-primary me-2"></i> Our Vision</h3>
+                    <p class="text-muted">
+                        We believe every business—big or small—deserves a strong online presence that not only looks
+                        great but also performs exceptionally. That’s why we offer a full range of services to help you
+                        grow, from responsive web development to SEO strategies and ongoing support.
+                    </p>
+                    <p class="transformer-text mt-5" data-aos="zoom-in">
+                        <i class="fas fa-rocket fs-1 me-2 fa-beat"></i> Our mission is simple: empower businesses
+                        through
+                        smart, creative, and scalable (able to be
+                        scaled) digital solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section id="what-we-do" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+                What We Do
+            </h2>
+            <p class="text-center mb-5 fs-5 text-muted" data-aos="fade-right" data-aos-delay="200"
+                data-aos-duration="1000">
+                At Arya Infotech, we provide a complete suite of web and digital <br> services designed to meet your
+                unique
+                needs:
+            </p>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 hover-scale">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-2x mb-3 icon"></i>
+                            <h5 class="card-title fw-semibold">Custom Website Design & Development</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 hover-scale">
+                        <div class="card-body text-center">
+                            <i class="fab fa-wordpress fa-2x mb-3 icon"></i>
+                            <h5 class="card-title fw-semibold">WordPress & CMS Solutions</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 hover-scale">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shopping-cart fa-2x mb-3 icon"></i>
+                            <h5 class="card-title fw-semibold">E-commerce Development (WooCommerce, Shopify, custom
+                                coding)</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 hover-scale">
+                        <div class="card-body text-center">
+                            <i class="fas fa-paint-brush fa-2x mb-3 icon"></i>
+                            <h5 class="card-title fw-semibold">UI/UX Design & Branding</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 hover-scale">
+                        <div class="card-body text-center">
+                            <i class="fas fa-search fa-2x mb-3 icon"></i>
+                            <h5 class="card-title fw-semibold">Search Engine Optimization (SEO)</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="card h-100 shadow-sm border-0 rounded-3 hover-scale">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-2x mb-3 icon"></i>
+                            <h5 class="card-title fw-semibold">Maintenance & Technical Support</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center mt-5 fs-6 text-muted" data-aos="fade-up" data-aos-delay="900"
+                style="max-width: 600px; margin: 0 auto;">
+                Every service we offer is aimed at one goal: <strong>delivering real value and measurable
+                    results</strong> for your business.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="our-team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">Our
+                Team</h2>
+            <p class="text-center text-muted mb-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000"
+                style="max-width: 700px; margin: 0 auto;">
+                Meet the amazing minds behind Arya Infotech. We are a blend of creativity, code, and strategy, working
+                together to build results-driven digital experiences.
+            </p>
+
+            <div class="swiper team-swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm text-center p-3 h-100">
+                            <!-- <img src="https://via.placeholder.com/150" class="rounded-circle mx-auto mb-3"
+                                style="width: 100px; height: 100px;" alt="Team Member"> -->
+                            <i class="fa fa-user-circle fa-6x mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-semibold mb-1">John Doe</h5>
+                            <p class="text-muted mb-1">Xyz</p>
+                            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm text-center p-3 h-100">
+                            <!-- <img src="https://via.placeholder.com/150" class="rounded-circle mx-auto mb-3"
+                                style="width: 100px; height: 100px;" alt="Team Member"> -->
+                            <i class="fa fa-user-circle fa-6x mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-semibold mb-1">John Doe</h5>
+                            <p class="text-muted mb-1">Xyz</p>
+                            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm text-center p-3 h-100">
+                            <!-- <img src="https://via.placeholder.com/150" class="rounded-circle mx-auto mb-3"
+                                style="width: 100px; height: 100px;" alt="Team Member"> -->
+                            <i class="fa fa-user-circle fa-6x mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-semibold mb-1">John Doe</h5>
+                            <p class="text-muted mb-1">Xyz</p>
+                            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-sm text-center p-3 h-100">
+                            <!-- <img src="https://via.placeholder.com/150" class="rounded-circle mx-auto mb-3"
+                                style="width: 100px; height: 100px;" alt="Team Member"> -->
+                            <i class="fa fa-user-circle fa-6x mb-3" aria-hidden="true"></i>
+                            <h5 class="fw-semibold mb-1">John Doe</h5>
+                            <p class="text-muted mb-1">Xyz</p>
+                            <p class="small text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination mt-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 text-white position-relative"
+        style="background: url('images/about/choose-us-background.webp') no-repeat center/cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+
+        <div class="container position-relative">
+            <h2 class="text-center fw-bold mb-5" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+                Discover What Sets Arya Infotech Apart</h2>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                    <div class="p-4 rounded-4 bg-white bg-opacity-10 why-us-card text-white shadow-sm h-100">
+                        <i class="fas fa-users fa-2x mb-3 text-info"></i>
+                        <h5 class="fw-semibold">Client-First Approach</h5>
+                        <p class="small">We listen, we understand, and we deliver what matters most to you. Your
+                            satisfaction is our top priority.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="p-4 rounded-4 bg-white bg-opacity-10 why-us-card text-white shadow-sm h-100">
+                        <i class="fas fa-laptop-code fa-2x mb-3 text-warning"></i>
+                        <h5 class="fw-semibold">Experienced & Versatile Team</h5>
+                        <p class="small">Years of experience across tech and industries to ensure top-quality work every
+                            time.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+                    <div class="p-4 rounded-4 bg-white bg-opacity-10 why-us-card text-white shadow-sm h-100">
+                        <i class="fas fa-comments fa-2x mb-3 text-success"></i>
+                        <h5 class="fw-semibold">Transparency & Communication</h5>
+                        <p class="small">No hidden fees. No tech jargon. Just honest advice and regular updates you can
+                            rely on.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="2000">
+                    <div class="p-4 rounded-4 bg-white bg-opacity-10 why-us-card text-white shadow-sm h-100">
+                        <i class="fas fa-lightbulb fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-semibold">Creative & Technical Balance</h5>
+                        <p class="small">We blend design with performance to make beautiful, functional, and fast
+                            digital products.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2500">
+                    <div class="p-4 rounded-4 bg-white bg-opacity-10 why-us-card text-white shadow-sm h-100">
+                        <i class="fas fa-handshake fa-2x mb-3 text-danger"></i>
+                        <h5 class="fw-semibold">Ongoing Support</h5>
+                        <p class="small">We stay with you even after launch — offering updates, improvements, and
+                            technical support when needed.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+        // Load Navbar and Footer
+        fetch('navbar.html').then(response => response.text()).then(data => { document.getElementById('navbar').innerHTML = data; });
+        fetch('footer.html').then(response => response.text()).then(data => { document.getElementById('footer').innerHTML = data; });
+
+        // Initialize Swiper
+        var teamSwiper = new Swiper('.team-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                992: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
