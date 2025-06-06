@@ -12,88 +12,18 @@ fetch('footer.html')
 //    AOS Initialization
 AOS.init();
 
-// Hero section slider with animations
-const slides = [
-    {
-        meta: "Service",
-        title: "IT Consulting",
-        status: "Expert technology advice.",
-        image: "./images/services/slide-1.jpg",
-        alt: "IT Consulting"
-    },
-    {
-        meta: "Service",
-        title: "SEO Services",
-        status: "Boost search rankings.",
-        image: "./images/services/slide-2.jpg",
-        alt: "SEO Services"
-    },
-    {
-        meta: "Service",
-        title: "UI/UX Design",
-        status: "User-friendly interfaces.",
-        image: "./images/services/slide-3.jpg",
-        alt: "UI/UX Design"
-    },
-    {
-        meta: "Service",
-        title: "Web Development",
-        status: "Build fast websites.",
-        image: "./images/services/slide-4.webp",
-        alt: "Web Development"
-    }
-];
-
-const slideMeta = document.getElementById("slide-meta");
-const slideTitle = document.getElementById("slide-title");
-const slideStatus = document.getElementById("slide-status");
-const slideImage = document.getElementById("slide-image");
-const leftHalf = document.getElementById("left-half");
-const rightHalf = document.getElementById("right-half");
-const buttons = document.querySelectorAll("#pagination button");
-
-let currentIndex = 0;
-let isAnimating = false;
-
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const index = parseInt(button.getAttribute("data-slide"));
-        if (index === currentIndex || isAnimating) return;
-
-        isAnimating = true;
-
-        buttons.forEach(btn => btn.classList.remove("active"));
-        button.classList.add("active");
-
-        // Animate slide out
-        leftHalf.classList.add("slide-out-left");
-        rightHalf.classList.add("slide-out-right");
-
-        setTimeout(() => {
-            // Update content and image
-            slideMeta.textContent = slides[index].meta;
-            slideTitle.innerHTML = slides[index].title;
-            slideStatus.textContent = slides[index].status;
-            slideImage.src = slides[index].image;
-            slideImage.alt = slides[index].alt;
-
-            // Remove slide out, add slide in
-            leftHalf.classList.remove("slide-out-left");
-            rightHalf.classList.remove("slide-out-right");
-            leftHalf.classList.add("slide-in-left");
-            rightHalf.classList.add("slide-in-right");
-
-            setTimeout(() => {
-                leftHalf.classList.remove("slide-in-left");
-                rightHalf.classList.remove("slide-in-right");
-                isAnimating = false;
-                currentIndex = index;
-            }, 600);
-        }, 600);
-    });
+VANTA.GLOBE({
+    el: ".background",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x40bcfa,
+    backgroundColor: 0x4a9d2
 });
-
-
 //  What we Offer section
 // Carousel
 $(document).ready(function () {
@@ -174,4 +104,4 @@ showSlide(0);
 
 
 
-// Services Page ----------------------------------------------------------------
+// About Page ----------------------------------------------------------------
