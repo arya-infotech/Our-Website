@@ -19,7 +19,7 @@
     <div id="navbar"></div>
 
     <!-- Hero Section -->
-    <section class="contact-hero">
+    <!-- <section class="contact-hero">
         <div class="overlay"></div>
         <div class="hero-content">
             <h1 class="fw-bold" data-aos="fade-down" data-aos-duration="1000"><i
@@ -30,7 +30,18 @@
         <div class="breadcrumb-custom" data-aos="fade-left" data-aos-duration="1000">
             <a href="#">Home</a> - <span>About Us</span>
         </div>
-    </section>
+    </section> -->
+
+
+    <section class="background" id="vanta-bg" style="width: 100%;"></section>
+    <div class="content">
+        <h1 class="fw-bold"><i class="fas fa-circle-info fa-bounce"></i>
+            About Us
+        </h1>
+        <p class="fs-5" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="2000">We don’t just design — we
+            bring ideas to life.</p>
+        </p>
+    </div>
 
     <!-- About Us Section -->
     <section class="position-relative overflow-hidden py-5 bg-light"
@@ -88,7 +99,8 @@
                     <div class="mission-img-container">
                         <div class="blue-box-top"></div>
                         <img src="./images/about/ourMisson.jpg" alt="Polly Walter" class="mission-img">
-                        <div class="name-bar text-white fw-bold" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="name-bar text-white fw-bold" data-aos="zoom-in" data-aos-delay="100"
+                            data-aos-duration="1000">
                             Arya Infotech <br>
                             <small>Telka Chamba, 176330</small>
                         </div>
@@ -336,12 +348,8 @@
     </section>
 
 
-
-
-
-
     <!-- Footer -->
-    <div id="footer"></div>
+    <!-- <div id="footer"></div> -->
 
 
     <!-- bootstrap -->
@@ -350,13 +358,13 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init();
-        // Load Navbar and Footer
-        fetch('navbar.html').then(response => response.text()).then(data => { document.getElementById('navbar').innerHTML = data; });
-        fetch('footer.html').then(response => response.text()).then(data => { document.getElementById('footer').innerHTML = data; });
 
+    <!-- Scripts: three.js and Vanta.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
         // Initialize Swiper
         var teamSwiper = new Swiper('.team-swiper', {
             slidesPerView: 1,
