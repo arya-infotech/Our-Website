@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Split Content & Image Slider</title>
+  <title>Our Services - Arya Infotech</title>
   <link rel="stylesheet" href="css/services.css">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet" />
@@ -25,30 +25,21 @@
   <!-- Navbar -->
   <div id="navbar"></div>
 
-  <!-- Hero Slider -->
-  <main>
-    <div class="left-half" id="left-half">
-      <div class="meta" id="slide-meta">Service</div>
-      <h2 id="slide-title">IT Consulting</h2>
-      <div class="meta" id="slide-status">Expert technology advice.</div>
-    </div>
+  <!-- Hero Content -->
+  <section class="background" id="vanta-bg"></section>
+  <div class="content">
+    <h1><i class="fas fa-chart-line fa-1x me-3 fa-bounce"></i>Our Services</h1>
+    <p data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="2000">
+      Smart Digital Solutions for Business Growth
+    </p>
+  </div>
 
-    <div class="right-half" id="right-half">
-      <img id="slide-image" src="./images/services/main-slide.webp" alt="IT Consulting" />
-    </div>
-
-    <div id="pagination">
-      <button class="active" data-slide="0" aria-label="IT Consulting"></button>
-      <button data-slide="1" aria-label="SEO Services"></button>
-      <button data-slide="2" aria-label="UI/UX Design"></button>
-      <button data-slide="3" aria-label="Web Development"></button>
-    </div>
-  </main>
 
   <!-- What We Offer section -->
   <section id="offer" class="mt-4 p-5 offer-section">
     <h2 class="text-center fw-bold" data-aos="zoom-in" data-aos-duration="2000">What We Offer</h2>
-    <p class="text-center" data-aos="fade-right" data-aos-duration="1000">We provide innovative and reliable digital solutions tailored to your business needs.
+    <p class="text-center" data-aos="fade-right" data-aos-duration="1000">We provide innovative and reliable digital
+      solutions tailored to your business needs.
       From
       website design and development to mobile apps, branding, and marketing—we help you grow online with speed,
       strategy, and creativity.</p>
@@ -278,7 +269,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+  <!-- Scripts: three.js and Vanta.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
   <script src="script.js"></script>
+
+
+  <script>
+
+  </script>
 </body>
 
 </html>
