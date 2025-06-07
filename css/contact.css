@@ -7,6 +7,9 @@
         body {
             overflow-x: hidden;
         }
+ body::-webkit-scrollbar {
+     display: none;
+ }
 
         /* .contact-hero {
             background: url('../images/contact/banner.jpg') no-repeat center center/cover;
