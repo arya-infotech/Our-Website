@@ -1,3 +1,6 @@
+ body::-webkit-scrollbar {
+     display: none;
+ }
 .arya-homepage {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
