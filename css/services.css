@@ -1,0 +1,282 @@
+    body {
+        font-family: 'Karla', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* --------------------------- Hero section --------------------------- */
+    .background {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        color: #fff;
+        padding: 0 20px;
+        max-width: 600px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    @media (min-width: 768px) {
+        .content {
+            left: 5%;
+            transform: translateY(-50%);
+            text-align: left;
+        }
+
+        .content h1 {
+            font-size: 3.5rem;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+        }
+    }
+
+    /* ---------------------------- What We Offer ---------------------------- */
+    .read-more {
+        border-radius: 20px !important;
+        padding: 0 10px !important;
+    }
+
+    .service-card:hover {
+        box-shadow: 0px 0px 5px 3px rgba(208, 222, 232, 0.8) !important;
+        transition: all .3s;
+    }
+
+    .service-content {
+        font-size: 13px;
+        color: rgb(97, 93, 93) !important;
+    }
+
+    /* ---------------------------- Our Specialization ---------------------------- */
+    .vertical-slider {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 100%;
+    }
+
+    .row.full-height {
+        height: 100%;
+        min-height: 500px;
+        /* Adjust as needed */
+    }
+
+    .thumb-img {
+        cursor: pointer;
+        margin-bottom: 15px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .thumb-img.active {
+        border-color: #0d6efd;
+    }
+
+    .thumb-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main-img-wrapper {
+        height: 100%;
+    }
+
+    .main-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .nav-btn {
+        border: none;
+        color: white;
+        padding: 8px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* From Uiverse.io by PriyanshuGupta28 */
+    .pushable {
+        position: relative;
+        background: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .front {
+        display: block;
+        position: relative;
+        border-radius: 8px;
+        background: #0d6efd;
+        letter-spacing: 1.5px;
+        transform: translateY(-4px);
+        transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+    }
+
+    .pushable:hover .front {
+        transform: translateY(-6px);
+        transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+    }
+
+    .pushable:active .front {
+        transform: translateY(-2px);
+        transition: transform 34ms;
+    }
+
+    @media (max-width: 768px) {
+        .thumb-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .thumb-wrapper {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            gap: .5rem;
+        }
+
+        .thumb-img {
+            width: 120px;
+            height: 80px;
+            flex-shrink: 0;
+        }
+
+        .main-img-wrapper {
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .main-img {
+            height: auto;
+            max-height: 250px;
+        }
+
+        .d-flexs {
+            flex-direction: column;
+            gap: 10px;
+            display: flex !important;
+        }
+
+        .text-uppercase {
+            margin-top: 3rem;
+        }
+    }
+
+    /* Default: show scrollbar */
+    .thumb-wrapper {
+        overflow: auto;
+    }
+
+
+    /* ------------------------------ Choose Us ------------------------------ */
+    
+
+    .choose-us .bi {
+        background: linear-gradient(0deg, #0093fa 0%, #d90550 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        vertical-align: middle;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+
+
+    .choose-us {
+        border-radius: 8px;
+        filter: drop-shadow(0 0 5px rgba(161, 212, 248, 0.55));
+        background-color: #fefefe;
+        padding: 20px 10px;
+    }
+
+    .choose-us h6 {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        font-family: var(--fontMedium);
+    }
+
+    .why-choose h4 {
+        font-size: 21px;
+        line-height: 30px;
+        font-size: var(--fontMedium);
+    }
+
+    .why-choose .col-5 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    /* ------------------------------------ Services Marquee ------------------------------ */
+    .services-marquee {
+        overflow: hidden;
+        background: linear-gradient(135deg, #e0f0ff, #ffffff);
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+        padding: 2rem 0;
+        position: relative;
+    }
+
+    .marquee-track {
+        display: flex;
+        width: max-content;
+        animation: scrollLeft 30s linear infinite;
+        gap: 4rem;
+    }
+
+    .marquee-track img {
+        height: 80px;
+        object-fit: contain;
+        transition: transform 0.3s;
+    }
+
+    .marquee-track img:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes scrollLeft {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    /* Duplicate the images to loop seamlessly */
+    .marquee-wrapper {
+        display: flex;
+        gap: 4rem;
+    }
