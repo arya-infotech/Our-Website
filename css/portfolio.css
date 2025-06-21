@@ -1,0 +1,258 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .portfolio-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .portfolio-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .portfolio-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-header p {
+            font-size: 1.2rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .project-item {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .project-details {
+            padding-right: 40px; /* Space for the image on larger screens */
+        }
+
+        .project-heading {
+            font-size: 2.5rem; /* Larger heading */
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .project-text {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .tech-used {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .tech-label {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #333;
+            margin-right: 5px;
+        }
+
+        .tech-tag-new {
+            background-color: #e0f2f7; /* Light blue background for tags */
+            color: #007bff; /* Primary blue text */
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        .badge{
+            font-size: 14px !important;
+        }
+
+        .btn-view-details {
+            display: inline-block;
+            padding: 12px 25px;
+            border: 2px solid #007bff; /* Primary blue border */
+            color: #007bff;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-view-details:hover {
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+        }
+
+        .project-img-container {
+            flex-shrink: 0;
+            text-align: center;
+            width: 100%;
+            max-width: 500px; /* Adjusted max-width for the image container */
+        }
+
+        .project-screenshot {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            max-width: 100%; /* Ensure image scales within its container */
+        }
+
+        .project-screenshot:hover {
+            transform: scale(1.02);
+        }
+
+        .stats-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 200px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            text-align: center; /* Center content within the item */
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5rem; /* Slightly larger number */
+            font-weight: 700;
+            color: #0056b3; /* Darker blue for emphasis */
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 1.2rem; /* Slightly larger label */
+            color: #495057;
+            font-weight: 600;
+        }
+
+        .reverse-layout {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .reverse-layout {
+                flex-direction: column;
+            }
+            
+            .portfolio-header h1 {
+                font-size: 2rem;
+            }
+            
+            .project-title {
+                font-size: 1.5rem;
+            }
+            
+            .stats-row {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .portfolio-banner {
+            background: url('https://i.imgur.com/gO0t2fP.png') no-repeat center center/cover;
+            min-height: 550px;
+            position: relative;
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .portfolio-banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 128, 0.7); /* Dark blue overlay */
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .portfolio-banner h2,
+        .portfolio-banner p {
+            position: relative;
+            z-index: 1;
+        }
+
+       
+
+
+ 
+    
