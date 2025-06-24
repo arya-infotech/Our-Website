@@ -1,100 +1,95 @@
  body {
      font-family: 'Poppins', sans-serif;
      background-color: #f8f9fa;
+     margin: 0;
+     padding: 0;
  }
 
- html,
- body {
-     overflow-x: hidden;
+ body::-webkit-scrollbar {
+     display: none;
  }
 
- .contact-hero {
-     background: url('../images/contact/banner.jpg') no-repeat center center/cover;
-     height: 100vh;
-     position: relative;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding: 0 5%;
-     color: #fff;
- }
-
- .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: rgba(0, 0, 0, 0.6);
-     z-index: 1;
- }
-
- .hero-content,
- .breadcrumb-custom {
-     position: relative;
-     z-index: 2;
- }
-
- .breadcrumb-custom a {
-     color: white;
-     font-weight: bold;
-     text-decoration: none;
- }
-
- .breadcrumb-custom span {
-     color: #0d6efd;
-     font-weight: bold;
- }
-
- /* -------------------------------- Our Misson ------------------------------ */
- .mission-section {
-     padding: 60px 0;
- }
-
- .mission-img-container {
-     position: relative;
-     display: inline-block;
- }
-
- .blue-box-top {
-     position: absolute;
-     top: -20px;
-     left: -20px;
-     width: 100%;
-     height: 100%;
-     background-color: #0d6efd;
-     z-index: 1;
- }
-
- .mission-img {
-     position: relative;
-     z-index: 2;
+ .background {
      width: 100%;
      height: 500px;
-     border: 1px solid #0d6efd;
-     border-radius: 5px;
+     position: relative;
+     top: 50px;
+     z-index: 0;
  }
 
- .name-bar {
+ .content {
      position: absolute;
-     bottom: 15px;
-     left: 0;
-     background-color: #0d6efd;
-     color: black;
-     padding: 8px 20px;
-     font-weight: 600;
-     z-index: 3;
-     border-radius: 0 5px 5px 0;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 1;
+     color: #fff;
+     padding: 0 20px;
+     max-width: 600px;
+     width: 90%;
+     text-align: center;
  }
 
- .transformer-text {
-     padding: 20px 25px;
-     border-radius: 12px;
-     font-weight: 600;
+ .content h1 {
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+     font-weight: 700;
+ }
+
+ .content p {
+     font-size: 1.2rem;
+     line-height: 1.5;
+ }
+
+ @media (min-width: 768px) {
+     .content {
+         left: 5%;
+         transform: translateY(-50%);
+         text-align: left;
+     }
+
+     .content h1 {
+         font-size: 3.5rem;
+     }
+
+     .content p {
+         font-size: 1.5rem;
+     }
+ }
+
+ /* -------------------------------- Our Vision ------------------------------ */
+ .title {
+     display: block;
+     padding: 12px 15px;
+     color: #212529;
+     border-radius: 6px;
+     font-weight: 500;
+     transition: all .6s ease;
+     text-decoration: none;
+     box-shadow: 0 2px 2px #ccc !important;
+ }
+
+ .sub-title .title:hover {
+     background: #007bff;
+ }
+
+ .title i:hover {
+     background: white !important;
+ }
+
+ .title.active {
+     background: linear-gradient(45deg, #0d6efd, #6610f2);
+     color: #fff !important;
+     box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+ }
+
+ .title i {
      font-size: 1.1rem;
-     box-shadow: inset 0 0 30px rgba(13, 110, 253, 0.5), inset 0 0 15px rgba(13, 110, 253, 0.7);
-     transition: transform 0.5s ease-in-out, box-shadow 0.3s;
-     letter-spacing: 0.6px;
+     vertical-align: middle;
+ }
+
+ .sub-title+.sub-title {
+     margin-top: 10px;
  }
 
  /* -------------------------------- What we do ------------------------- */
@@ -102,11 +97,30 @@
      position: relative;
      padding: 60px 0;
      overflow: hidden;
-     background: url('../images/background.jpg') no-repeat center center/cover;
+     background-color: white;
+     z-index: 1;
  }
 
+ #what-we-do::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: url('../images/background.jpg') no-repeat center / cover fixed;
+     opacity: 0.3;
+     z-index: 0;
+ }
+
+ #what-we-do>* {
+     position: relative;
+     z-index: 1;
+ }
+
+
  .card-body {
-     background-color: rgba(13, 110, 253, 0.2);
+     background-color: hsla(217, 100%, 85%, .3);
      border-radius: 0.5rem;
  }
 
@@ -117,7 +131,7 @@
 
  .icon {
      padding: 1.5rem;
-     background: #0d6efd;
+     background: hsla(217, 75%, 78%, 0.2);
      border-radius: 26% 74% 54% 46% / 22% 48% 52% 78%;
      color: white;
  }
@@ -128,57 +142,48 @@
  }
 
  /* ------------------------------ Our Team ----------------------------- */
- .swiper-slide .card {
-     transition: transform 0.3s ease;
+ .team-img-wrapper {
+     position: relative;
+     display: inline-block;
  }
 
- .swiper-slide .card:hover {
-     transform: scale(1.03);
-     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+ .team-img-wrapper::before {
+     content: "";
+     position: absolute;
+     bottom: 8px;
+     left: -10px;
+     width: 70%;
+     height: 67%;
+     background: #007bff;
+     border-top-left-radius: 80px;
+     border-bottom-left-radius: 80px;
+     border-top-right-radius: 80px;
+     z-index: 0;
+     transition: transform 0.5s ease;
  }
 
- .swiper-pagination {
-     position: static !important;
-     margin-top: 1rem;
+ .team-img-wrapper:hover::before {
+     transform: scale(1.1);
  }
 
- .swiper-pagination-bullet {
-     width: 14px;
-     height: 14px;
-     background: rgba(255, 255, 255, 0.6);
-     opacity: 1;
-     margin: 0 6px;
-     transition: transform 0.3s ease, background-color 0.3s ease;
+ .team-img-wrapper img {
+     position: relative;
+     z-index: 1;
  }
-
- .swiper-pagination-bullet-active {
-     background: #0d6efd;
-     transform: scale(1.4);
+ .social-icon1, .social-icon2{
+    background: #0077B5;
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50px;
+    color: white !important;
  }
-
- .swiper-pagination-bullet:hover {
-     transform: scale(1.2);
-     background-color: #198754;
- }
-
- @keyframes bounceScale {
-
-     0%,
-     100% {
-         transform: scale(1.4);
-     }
-
-     50% {
-         transform: scale(1.8);
-     }
- }
-
- .swiper-pagination-bullet-active {
-     animation: bounceScale 0.4s ease-in-out;
+ .social-icon2{
+    background: #1694EB;
+    margin-left: -1rem;
  }
 
  /* ----------------------------- Why Choose Us ----------------------------- */
- .why-us-card{
+ .why-us-card {
      background-color: rgba(255, 255, 255, 0.1);
      backdrop-filter: blur(6px);
      border: 1px solid rgba(255, 255, 255, 0.2);
